@@ -10,13 +10,14 @@ class Formatter {
     let strArr = string.split(" ")
     let newArr = [];
     newArr.push(this.capitalize(strArr[0]));
-    for (let word of strArr.slice(1)) {
+    
+    strArr.slice(1).forEach(word => {
       if (checkCap.includes(word)) {
         newArr.push(word);
       } else {
         newArr.push(this.capitalize(word));
       }
-    }
+    })
 
     return newArr.join(" ");
   }
