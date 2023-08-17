@@ -22,8 +22,3 @@ class Formatter {
   }
 
 }
-
-let str = "chicken soup with rice and a few other songs"
-let sts = "a tale of two cities"
-console.log(Formatter.titleize(str));
-console.log(Formatter.titleize(sts));
